@@ -15,6 +15,9 @@ import AllProducts from "./components/AllProducts";
 import BlogList from "./components/Blogs";
 import AllBlogs from "./components/AllBlogs";
 import BlogDetail from "./pages/BlogDetail";
+import ScrollToTop from "./components/ui/ScrollToTop";
+
+
 
 
 // Lazy load sections
@@ -43,6 +46,7 @@ const App = () => {
   return (
     <div className="font-sans text-gray-800 dark:text-gray-200 dark:bg-black">
       <Router>
+      <ScrollToTop />
         <Navbar
           toggleTheme={() => setDarkMode(!darkMode)}
           darkMode={darkMode}
@@ -58,6 +62,7 @@ const App = () => {
         >
           <main className="flex-grow">
             <Routes>
+              
               <Route
                 path="/"
                 element={
