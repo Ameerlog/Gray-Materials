@@ -50,7 +50,7 @@ const AboutSection = () => {
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-tight mb-6">
             Building Excellence
-            <span className="block bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Since 2009</span>
+            <span className="block bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">Since 2021</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
             Transforming construction dreams into reality with premium materials and unwavering commitment to quality

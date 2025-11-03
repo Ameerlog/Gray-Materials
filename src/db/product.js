@@ -3,8 +3,8 @@ import PSand from "../assets/images/PSAND.webp";
 import Aggregates from "../assets/images/Aggregates.webp";
 import RMC from "../assets/images/Ready mix concrete.webp";
 import Precast from "../assets/images/Precast products.webp";
-import Pavers from "../assets/images/Paver blocks.webp";
-import ConcreteBlocks from "../assets/images/Solid concrete blocks.webp";
+import Pavers from "../assets/images/Pavers.webp";
+import ConcreteBlocks from "../assets/images/ACC.webp";
 import { Construction, Hammer, Boxes, Truck, Building2, Square, ToyBrick } from 'lucide-react';
 
 export const products = [

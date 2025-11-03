@@ -12,6 +12,10 @@ import FAQ from "./components/Faq";
 import { Phone } from "lucide-react";
 import Loader from "./components/ui/Loaders";
 import AllProducts from "./components/AllProducts";
+import BlogList from "./components/Blogs";
+import AllBlogs from "./components/AllBlogs";
+import BlogDetail from "./pages/BlogDetail";
+
 
 // Lazy load sections
 const Products = lazy(() => import("./components/Products"));
@@ -65,7 +69,7 @@ const App = () => {
                     <Technology />
 
                     <Brands />
-
+                    <BlogList/>
                     <FAQ />
                     <Contact />
                   </>
@@ -75,7 +79,8 @@ const App = () => {
               <Route path="/contact" element={<Contact />} />
               <Route path="/products" element={<AllProducts />} />
               <Route path="/product/:id" element={<ProductDetail />} />
-
+             <Route path="/blogs" element={<AllBlogs />} />
+             <Route path="/blogs/:id" element={<BlogDetail />} />
               <Route path="/aboutUs" element={<AboutSection />} />
             </Routes>
           </main>

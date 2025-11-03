@@ -13,6 +13,7 @@ import hero1 from "../assets/images/main01.webp";
 import hero2 from "../assets/images/main 02.webp";
 import hero3 from "../assets/images/Main 03.webp";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -43,7 +44,7 @@ const slides = [
 
 const HeroSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+    const navigate = useNavigate();
   return (
     <section className="relative w-full h-screen">
       <Swiper
@@ -90,12 +91,12 @@ const HeroSlider = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href="/products"
+                <button
+                  onClick={() => navigate("/products")}
                   className="mt-8 inline-block rounded-xl px-6 py-3 bg-blue-600 text-white font-medium hover:bg-blue-700 transition focus:outline-none focus:ring-2 focus:ring-blue-400"
                 >
                   Explore Now
-                </a>
+                </button>
               </div>
             </div>
           </SwiperSlide>

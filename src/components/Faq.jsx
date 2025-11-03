@@ -6,10 +6,13 @@ import { faqs } from "../db/faq";
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <section className="bg-white dark:bg-black py-20 px-6 md:px-10">
       <div className="max-w-3xl mx-auto">
-       
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,18 +33,18 @@ const FAQ = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              onHoverStart={() => setOpenIndex(index)}
-              onHoverEnd={() => setOpenIndex(null)}
               className="border-b border-gray-200 dark:border-zinc-800 relative"
             >
-             
               <motion.div
                 className="absolute inset-0 bg-gray-50 dark:bg-zinc-900/30 rounded-lg"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: openIndex === index ? 1 : 0 }}
                 transition={{ duration: 0.2 }}
               />
-              <div className="w-full flex items-start justify-between gap-6 py-6 relative z-10">
+              <button
+                onClick={() => handleToggle(index)}
+                className="w-full flex items-start justify-between gap-6 py-6 relative z-10 text-left focus:outline-none"
+              >
                 <motion.span
                   className="text-lg md:text-xl font-medium text-gray-900 dark:text-white"
                   animate={{ x: openIndex === index ? 4 : 0 }}
@@ -52,9 +55,9 @@ const FAQ = () => {
 
                 <motion.div
                   className="flex-shrink-0 w-6 h-6 flex items-center justify-center"
-                  animate={{ 
+                  animate={{
                     scale: openIndex === index ? 1.2 : 1,
-                    rotate: openIndex === index ? 180 : 0 
+                    rotate: openIndex === index ? 180 : 0,
                   }}
                   transition={{ duration: 0.3, type: "spring", stiffness: 200 }}
                 >
@@ -64,7 +67,8 @@ const FAQ = () => {
                     <Plus className="w-5 h-5 text-gray-900 dark:text-white" />
                   )}
                 </motion.div>
-              </div>
+              </button>
+
               <AnimatePresence initial={false}>
                 {openIndex === index && (
                   <motion.div
@@ -94,4 +98,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default FAQ;

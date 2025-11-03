@@ -298,7 +298,7 @@ const Contact = () => {
               <div className="hover:scale-105 transition-transform duration-200">
                 <Phone className="w-5 h-5 mx-auto text-blue-600 mb-2" />
                 <p className="text-sm font-medium text-gray-700 dark:text-gray-200">
-                  080 - 8575 8575
+                  +91-808575 8575
                 </p>
               </div>
               <div className="hover:scale-105 transition-transform duration-200">

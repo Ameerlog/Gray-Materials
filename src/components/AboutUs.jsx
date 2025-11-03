@@ -9,9 +9,9 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 
-import image1 from "../assets/images/Ready mix concrete.webp";
-import image2 from "../assets/images/Solid concrete blocks.webp";
-import image3 from "../assets/images/Paver blocks.webp";
+import image1 from "../assets/images/PSAND.webp";
+import image2 from "../assets/images/ACC.webp";
+import image3 from "../assets/images/Aggregates.webp";
 
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("mission");
@@ -46,7 +46,7 @@ const AboutUs = () => {
 
   const stats = useMemo(
     () => [
-      { number: "15+", label: "Years" },
+      { number: "4+", label: "Years" },
       { number: "500+", label: "Projects" },
       { number: "100%", label: "Quality" },
     ],
@@ -64,7 +64,7 @@ const AboutUs = () => {
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
             Building Excellence
-            <span className="block text-blue-600 mt-2">Since 2019</span>
+            <span className="block text-blue-600 mt-2">Since 2021</span>
           </h2>
         </div>
 

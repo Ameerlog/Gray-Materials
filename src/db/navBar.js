@@ -7,7 +7,7 @@ export const navigationData = {
     // { id: 2, label: "Whom We Serve", sectionId: "technology", type: "scroll" },
     { id: 3, label: "Products", path: "/products", type: "mega" },
     // { id: 4, label: "Gallery", path: "/gallery", type: "link" },
-    // { id: 5, label: "Blogs", sectionId: "blogs", type: "scroll" },
+    { id: 5, label: "Blogs", sectionId: "blogs", type: "scroll" },
     { id: 4, label: "Why Choose Gray Material", sectionId: "technology",type:"scroll"},
     { id: 6, label: "Contact", sectionId: "contact", type: "scroll" }
   ]

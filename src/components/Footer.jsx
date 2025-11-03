@@ -1,57 +1,78 @@
-
-
 import React from "react";
 import Logo from "../assets/images/Logo.png";
 import { Linkedin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-10 px-4">
+    <footer className="relative z-[60] bg-black text-white py-10 px-4">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8">
+      
         <div>
           <img src={Logo} alt="Logo" className="h-10 object-cover mb-2" />
           <p>Delivering top-quality construction materials for you.</p>
         </div>
+
+
         <div>
           <h3 className="font-bold mb-2">Company</h3>
-          <ul>
+          <ul className="space-y-1">
             <li>
               <a href="/products" className="hover:underline">
-           Products
+                Products
               </a>
             </li>
             <li>
-              <a href="/aboutUs"  className="hover:underline">
-                AboutUs
+              <a href="/aboutUs" className="hover:underline">
+                About Us
               </a>
             </li>
             <li>
-              <a href="/contact"  className="hover:underline">
-               Contact
+              <a href="/contact" className="hover:underline">
+                Contact
               </a>
             </li>
           </ul>
         </div>
-        <div >
+
+           <div>
+
           <h3 className="font-bold mb-2">Contact</h3>
           <p>info@graymaterial.com</p>
-          <p>080 - 8575 8575</p>
+          <p>+91-8085758575</p>
         </div>
+
+    
         <div>
           <h3 className="font-bold mb-2">Follow Us</h3>
-          <p className="flex items-center gap-4">
-            <span>
-              <Linkedin className="hover:text-blue-500" />
-            </span>
-            <span>
-              <Facebook  className="hover:text-blue-400"/>
-            </span>
-            <span>
-              <Instagram  className="hover:text-pink-500"/>
-            </span>
-          </p>
+          <div className="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/company/gray-material/"
+              target="_blank"
+              rel="noopener noreferrer external"
+              className="hover:text-blue-500 cursor-pointer"
+            >
+              <Linkedin />
+            </a>
+            <a
+              href="https://www.facebook.com/graymaterial"
+              target="_blank"
+              rel="noopener noreferrer external"
+              className="hover:text-blue-400 cursor-pointer"
+            >
+              <Facebook />
+            </a>
+            <a
+              href="https://www.instagram.com/gray_materials/"
+              target="_blank"
+              rel="noopener noreferrer external"
+              className="hover:text-pink-500 cursor-pointer"
+            >
+              <Instagram />
+            </a>
+          </div>
         </div>
       </div>
+
       <p className="text-center mt-8 text-sm">
         &copy; Gray Materials®, 2025. All rights reserved.
       </p>

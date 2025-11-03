@@ -18,10 +18,10 @@ const ProductDetail = () => {
   const product = products.find((p) => p.id === id);
   const navigate = useNavigate();
 
-  const googleDriveLink =
-    "https://drive.google.com/file/d/your-file-id/view?usp=sharing";
+  // const googleDriveLink =
+  //   "https://drive.google.com/file/d/your-file-id/view?usp=sharing";
 
-  const localFileLink = "/brochures/sample-brochure.pdf";
+  const localFileLink = "https://drive.google.com/file/d/1cG14v3L3o2hhZJsEsRkX8L-cI2ZWIVHf/view";
 
   // PRODUCT NOT FOUND STATE
   if (!product) {
@@ -143,7 +143,7 @@ const ProductDetail = () => {
               </p>
 
               <div className="flex flex-col gap-2">
-                <a
+                {/* <a
                   href={googleDriveLink}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -151,7 +151,7 @@ const ProductDetail = () => {
                 >
                   <Download className="w-4 h-4" />
                   Google Drive PDF
-                </a>
+                </a> */}
 
                 <a
                   href={localFileLink}
@@ -159,7 +159,7 @@ const ProductDetail = () => {
                   className="w-full flex items-center justify-center gap-2 bg-white text-blue-600 font-medium py-2 sm:py-2.5 rounded-md hover:bg-blue-50 transition-colors text-xs sm:text-sm"
                 >
                   <Download className="w-4 h-4" />
-                  Local Brochure
+                  Brochures
                 </a>
               </div>
             </div>
