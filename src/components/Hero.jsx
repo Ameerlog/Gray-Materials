@@ -9,9 +9,9 @@ import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 
 
-import hero1 from "../assets/images/main01.webp";
-import hero2 from "../assets/images/main 02.webp";
-import hero3 from "../assets/images/Main 03.webp";
+import hero1 from "../assets/images/1.webp";
+import hero2 from "../assets/images/2.webp";
+import hero3 from "../assets/images/3.webp";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
