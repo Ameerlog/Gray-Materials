@@ -90,7 +90,7 @@ const App = () => {
             </Routes>
           </main>
           <a
-            href="https://wa.me/+91-8085758575"
+            href="https://wa.me/918085758575"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"

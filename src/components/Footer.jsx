@@ -55,7 +55,7 @@ const Footer = () => {
               <Linkedin />
             </a>
             <a
-              href="https://www.facebook.com/graymaterial"
+              href="https://www.facebook.com/profile.php?id=61583453846165"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 cursor-pointer"
